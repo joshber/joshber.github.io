@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /*.jpg
+Disallow: /*.png
+Disallow: /*.pdf
+Disallow: /*.mp3
+Disallow: /_/*
+Disallow: /prev/*
+Disallow: /.well-known/*

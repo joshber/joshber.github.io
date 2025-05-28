@@ -1,0 +1,103 @@
+@import url("/design/normalize.css");
+@font-face {
+	font-family: "kd";
+	font-style: normal;
+	font-weight: 300;
+	src: url("/design/hinted-KirimomiDisplay-Light.woff2") format("woff2");
+}
+@font-face {
+	font-family: "kd";
+	font-style: italic;
+	font-weight: 300;
+	src: url("/design/hinted-KirimomiDisplay-LightItalic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "kd";
+	font-style: normal;
+	font-weight: 600;
+	src: url("/design/hinted-KirimomiDisplay-Bold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "kd";
+	font-style: italic;
+	font-weight: 600;
+	src: url("/design/hinted-KirimomiDisplay-BoldItalic.woff2") format("woff2");
+}
+body {
+	 animation: fadein ease 2s;
+	 animation-iteration-count: 1;
+	 transform-origin: 50% 50%;
+	 animation-fill-mode: forwards;
+	 opacity: 0;
+	 opacity: 1\9; /* IE<9 could not handle opacity animations */
+}
+@keyframes fadein {
+	 0% { opacity: 0; }
+	 100% { opacity: 1; }
+}
+html {
+	height: 100%;
+	font: normal 300 20px/1.8 "kd";
+	text-rendering: optimizeLegibility;
+}
+body {
+	background: oklch(99% 0 240);
+	color: #000f;
+	word-wrap: break-word;
+	margin: .4rem;
+	padding: 0;
+}
+@media all and (max-width: 600px) {
+	html {
+		font: normal 300 18px/1.8 "kd";
+	}
+}
+::selection {
+	background: #0992;
+}
+em { font-style: italic; }
+strong { font-weight: 600; }
+a {
+	color: inherit;
+	text-decoration: none;
+	border: 0;
+	padding: 0 0 .1ch 0;
+	box-shadow: inset 0 -1px 0 #099f;
+}
+a:focus {
+	outline: none;
+	background: #0992;
+}
+h1 {
+	font-size: 133%;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-size: 100%;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .05ch;
+	padding: 0;
+	margin: 2.4em 0 0;
+}
+p {
+	margin: 1em 0;
+	padding: 0;
+}
+#content {
+	max-width: 54ch;
+	margin: 4rem auto !important;
+	padding-bottom: 4rem;
+}
+hr {
+	padding: 0;
+	margin: 2.4rem 19%;
+	border: none;
+	border-top: 1px solid #099f;
+}
+.addtl {
+	font-size: 83.3%;
+	margin: 0;
+}
